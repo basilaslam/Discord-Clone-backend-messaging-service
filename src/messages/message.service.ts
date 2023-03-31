@@ -74,8 +74,7 @@ export class MessageService {
   }
 
   async addMessage(data: messageModel): Promise<returnMessage> {
-    console.log('test-3');
-
+    console.log('test-3', data);
     const { chatId, senderId, text } = data;
 
     const message = new this._MessageModel({
