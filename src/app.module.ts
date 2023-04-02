@@ -16,7 +16,7 @@ import { ConfigModule } from '@nestjs/config';
         name: 'MESSAGE_SERVICE',
         transport: Transport.RMQ,
         options: {
-          urls: ['amqp://rabbitmq:5672/'],
+          urls: ['amqp://52.198.215.5:5672/discord'],
           queue: 'message_queue',
           queueOptions: {
             durable: false,
